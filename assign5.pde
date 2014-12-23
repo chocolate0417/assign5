@@ -169,7 +169,7 @@ void draw() {
        //hits the tops or bottoms 
        if ((ballX - diameter/2 <= brickX + side && ballX + diameter/2 >= brickX) && 
                (ballY <= brickY + side && ballY >= brickY)){
-                 println("ow");
+             
                  ballOne.vertical();              
                  bricks[i].hit();
                  score += 10;
@@ -181,7 +181,7 @@ void draw() {
        //we don't update and we need to check status again.   
        else if ((ballY - diameter/2 <= brickY + side && ballY + diameter/2 >= brickY) && 
            (ballX <= brickX + side && ballX >= brickX)){
-              println("hit");
+            
               ballOne.horizontal();   
               bricks[i].hit();
               score += 10;
